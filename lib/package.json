@@ -1,9 +1,7 @@
 {
   "description": "Timeline UI for React Native 🙇🏻‍♂️",
-  "homepage": "https://github.com/jeongshin/react-native-awesome-timeline",
-  "repository": "https://github.com/jeongshin/react-native-awesome-timeline",
   "author": "jeongshin (https://github.com/jeongshin)",
-  "name": "react-native-awesome-timeline",
+  "name": "@app-emotion/react-native-timeline-ui",
   "main": "index.js",
   "types": "index.d.ts",
   "version": "0.0.0",
