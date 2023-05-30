@@ -1,6 +1,7 @@
 {
   "description": "Timeline UI for React Native 🙇🏻‍♂️",
   "author": "jeongshin (https://github.com/jeongshin)",
+  "repository": "https://github.com/app-emotion/react-native-timeline-ui",
   "name": "@app-emotion/react-native-timeline-ui",
   "main": "index.js",
   "types": "index.d.ts",
