@@ -1,5 +1,11 @@
 import React, { ReactNode } from 'react';
-import { View, useWindowDimensions, StyleSheet } from 'react-native';
+import {
+  View,
+  useWindowDimensions,
+  StyleSheet,
+  ViewStyle,
+  StyleProp,
+} from 'react-native';
 
 import { toPxUnit } from '../../utils';
 
@@ -8,9 +14,16 @@ interface Props {
   padding: number;
   paddingColor: string;
   children?: ReactNode;
+  style?: StyleProp<ViewStyle>;
 }
 
-function TimelineLabel({ size, padding, paddingColor, children }: Props) {
+function TimelineLabel({
+  size,
+  padding,
+  paddingColor,
+  children,
+  style,
+}: Props) {
   const { width } = useWindowDimensions();
 
   const sizeInPx = toPxUnit(size, width);
@@ -26,6 +39,7 @@ function TimelineLabel({ size, padding, paddingColor, children }: Props) {
           backgroundColor: paddingColor,
           padding,
         },
+        style,
       ])}>
       {children}
     </View>

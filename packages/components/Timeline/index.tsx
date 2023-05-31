@@ -169,6 +169,10 @@ export interface TimelineProps<T>
   dividerTextFormatter?: (date: Date) => string;
 
   /**
+   * custom style for label
+   */
+  labelStyle?: StyleProp<ViewStyle>;
+  /**
    * animation configuration
    *
    * **recommend memoize with useMemo**
@@ -203,6 +207,7 @@ function Timeline<T extends TimelineItem>({
   showsHorizontalDivider = true,
   dividerTextStyle,
   dividerTextFormatter,
+  labelStyle,
   ...props
 }: TimelineProps<T>) {
   const items: (T | Date)[] = useMemo(
@@ -262,7 +267,8 @@ function Timeline<T extends TimelineItem>({
             <TimelineLabel
               size={labelSize}
               paddingColor={labelPaddingColor}
-              padding={labelPadding}>
+              padding={labelPadding}
+              style={labelStyle}>
               {renderLabel ? (
                 renderLabel(item)
               ) : (
