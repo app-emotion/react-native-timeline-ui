@@ -183,7 +183,7 @@ export interface TimelineProps<T>
 function Timeline<T extends TimelineItem>({
   data,
   injectDividerBy = 'month',
-  sortDateBy = 'asc',
+  sortDateBy = 'desc',
   renderDivider,
   renderItem: renderTimelineItem,
   renderLabel,
@@ -379,7 +379,7 @@ export function generateTimelineItems<T extends { date: Date | string }>(
       if (sortBy === 'asc') {
         return l.date.getTime() - r.date.getTime();
       }
-      return l.date.getTime() - r.date.getTime();
+      return r.date.getTime() - l.date.getTime();
     });
 
   if (divideBy === 'never') return sorted;
