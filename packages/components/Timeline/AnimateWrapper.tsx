@@ -68,7 +68,7 @@ const AnimateWrapper = ({
       transform: [
         {
           translateY: withTiming(
-            visible ? 0 : translateYFrom,
+            visible ? 0 : translateYFrom * -1,
             translateWithTimingConfig ?? {
               duration: 2000,
               easing: Easing.bezier(0.25, 0.1, 0.25, 1),
