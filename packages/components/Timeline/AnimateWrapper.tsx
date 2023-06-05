@@ -46,7 +46,7 @@ const AnimateWrapper = ({
   opacityWithTimingConfig,
   minOpacity = 0.2,
   translateWithTimingConfig,
-  translateYFrom = 40,
+  translateYFrom = 30,
   height,
 }: Props) => {
   const { width } = useWindowDimensions();
@@ -68,7 +68,7 @@ const AnimateWrapper = ({
       transform: [
         {
           translateY: withTiming(
-            visible ? 0 : translateYFrom * -1,
+            visible ? 0 : translateYFrom,
             translateWithTimingConfig ?? {
               duration: 2000,
               easing: Easing.bezier(0.25, 0.1, 0.25, 1),
