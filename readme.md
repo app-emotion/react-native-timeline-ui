@@ -6,7 +6,7 @@
 
 ## Overview 👀
 
-![gif](https://github.com/jeongshin/react-native-awesome-timeline/assets/64301935/e919a0b0-d75e-4bdc-955c-5b327f390af0)
+![gif](https://github.com/app-emotion/react-native-timeline-ui/assets/64301935/f4ccdfe6-303e-4bce-967a-57b6774ceb84)
 
 Timeline UI with FlatList and animation
 
@@ -20,6 +20,8 @@ Timeline UI with FlatList and animation
 
 - [ ] add inverted (horizontally inverted)
 - [ ] documentation
+
+![layout](https://github.com/jeongshin/react-native-awesome-timeline/assets/64301935/91b27cc4-03b4-444b-b225-e90a0c870cc0)
 
 ```ts
 // timeline item used to flat-list
@@ -192,5 +194,3 @@ export interface TimelineProps<T extends TimelineItem>
   animationConfig?: TimelineAnimationConfig;
 }
 ```
-
-![layout](https://github.com/jeongshin/react-native-awesome-timeline/assets/64301935/91b27cc4-03b4-444b-b225-e90a0c870cc0)
